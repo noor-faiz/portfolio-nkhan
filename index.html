@@ -1,113 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IQRA ISLAMIC CARE | Your Gateway to Quranic Knowledge</title>
-  <style>
-    body {
-      font-family: Roboto, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #e0f7ff; /* Light blue background */
-      color: #2e343f; /* Darker blue for text */
-    }
+  <!-- Meta data (important info for browser) -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    header {
-      background-color: #fff;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    }
+  <title>Noor Ahmad - AI Engineer</title>
 
-    header h1 {
-      font-size: 2em;
-      color: #2e8b57; /* Light green for main text */
-    }
-
-    header p {
-      font-size: 1.2em;
-    }
-
-    .courses {
-      padding: 40px 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-    }
-
-    .course-card {
-      width: 45%;
-      margin: 10px;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .course-card h3 {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-    }
-
-    .course-card p {
-      line-height: 1.2;
-    }
-
-    .enroll-button {
-      display: block;
-      padding: 10px 20px;
-      background-color: #2e8b57; /* Light green */
-      color: #fff;
-      border-radius: 5px;
-      font-size: 1.4em;
-      margin: 0 auto;
-    }
-
-    footer {
-      background-color: #2e343f;
-      padding: 20px;
-      text-align: center;
-      color: #fff;
-    }
-
-    footer p {
-      margin: 0;
-      font-size: 0.8em;
-    }
-
-    /* Javascript */
-    const enrollButtons = document.querySelectorAll('.enroll-button');
-
-    enrollButtons.forEach(button => {
-      button.addEventListener('click', function(e) {
-        if (this.textContent === "Enroll in Basic Course") {
-          alert("You've chosen the Basic Quran Course! Embrace the fundamentals of Quranic learning.");
-        } else if (this.textContent === "Enroll in Advanced Course") {
-          alert("Welcome to the Advanced Quran Course! Deepen your understanding and unlock new dimensions of the Quran.");
-        } else {
-          alert("Error: Unknown course selection.");
-        }
-      });
-    });
-
-  </style>
+  <!-- Connect this page with the CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <h1>IQRA <span style="color: #2e8b57;">ISLAMIC CARE</span></h1>
-    <p>Your Gateway to Quranic Knowledge</p>
+
+  <!-- Website header -->
+  <header>
+    <h1>Noor Ahmad Faiz Khan</h1>
+    <h2>AI & Software Engineer</h2>
+    <!-- Navigation buttons -->
+    <nav>
+  <a href="index.html" class="btn">Home</a>
+  <a href="about.html" class="btn">About Me</a>
+  <a href="#contact" class="btn">Contact</a>
+  <a href="#reviews" class="btn">Reviews</a>
+</nav>
   </header>
-  <main class="main">
-    <section class="courses">
-      <h2>Explore Quranic Learning</h2>
-      <div class="course-card">
-        <h3>Basic Quran Course</h3>
-        <p>Develop a strong foundation in reading, recitation, and understanding the Quran.</p>
-        <a href="#" class="enroll-button js-enroll-basic">Enroll in Basic Course</a>
-      </div>
-      <div class="course-card">
-        <h3>Advanced Quran Course</h3>
-        <p>Delve deeper into the Quran with advanced Recitation Rulings, Tajbid and learn ways to improve your recitation. Elevate your knowledge and experience.</p>
-        <a href="#" class="enroll-button js-enroll-advance">Enroll in Advance Course</a>
-      </div>
+
+  <!-- 🖼️ Image section -->
+  <section class="photo">
+    <img src="me.jpg" alt="My photo" width="200">
+  </section>
+
+  <!-- 💼 Work/Project section -->
+  <section class="work">
+    <h3>My Recent Work</h3>
+    <p>I have worked on multiple AI-based projects including:</p>
+    <ul>
+      <li>Thyroid Disease Risk Prediction using Machine Learning</li>
+      <li>Bengali Chatbot System using NLP</li>
+      <li>Image Classification using CNNs</li>
+    </ul>
+  </section>
+
+  <!-- 💬 Reviews -->
+  <section id="reviews">
+    <h3>Customer Reviews</h3>
+    <p><strong>Sarah:</strong> “Noor’s AI model improved our data processing by 30%! Amazing work.”</p>
+    <p><strong>Ahmed:</strong> “Professional, efficient, and knowledgeable in software development.”</p>
+  </section>
+
+  <!-- 📞 Contact section -->
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <p>Email: <a href="mailto:2023100000070@seu.edu.bd">2023100000070@seu.edu.bd</a></p>
+  <p><a href="https://linkedin.com/in/noor-ahmad-fkhan" target="_blank" class="btn">LinkedIn Profile</a></p>  
+</section>
+
+  <footer>
+    <p>© 2025 Noor Ahmad | All rights reserved</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: darkblue;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+}
+
+nav a {
+  color: lightpink;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+/* Button-style links */
+.btn {
+  display: inline-block;       /* Makes link behave like a button */
+  background-color: #007bff;   /* Blue background */
+  color: white;                /* White text */
+  padding: 10px 20px;          /* Space inside button */
+  border-radius: 5px;          /* Rounded corners */
+  text-decoration: none;       /* Remove underline */
+  margin: 5px;                 /* Space between buttons */
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* When you hover over button */
+.btn:hover {
+  background-color: #0056b3;   /* Darker blue when hovered */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+  margin: 10px;
+  background: lightblue;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+footer {
+  background: #003366;
+  color: white;
+  padding: 10px;
+}
