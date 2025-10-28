@@ -18,22 +18,20 @@ nav a {
   margin: 10px;
   font-weight: bold;
 }
-/* Button-style links */
 .btn {
-  display: inline-block;       /* Makes link behave like a button */
-  background-color: #007bff;   /* Blue background */
-  color: white;                /* White text */
-  padding: 10px 20px;          /* Space inside button */
-  border-radius: 5px;          /* Rounded corners */
-  text-decoration: none;       /* Remove underline */
-  margin: 5px;                 /* Space between buttons */
+  display: inline-block;       
+  background-color: #007bff;    
+  color: white;                
+  padding: 10px 20px;          
+  border-radius: 5px;         
+  text-decoration: none;       
+  margin: 5px;                 
   font-weight: bold;
-  transition: background-color 0.3s ease; /* Smooth hover effect */
+  transition: background-color 0.3s ease;
 }
 
-/* When you hover over button */
 .btn:hover {
-  background-color: #0056b3;   /* Darker blue when hovered */
+  background-color: #0056b3;   
 }
 
 nav a:hover {
@@ -60,3 +58,4 @@ footer {
   color: white;
   padding: 10px;
 }
+
