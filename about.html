@@ -8,11 +8,12 @@
 </head>
 <body>
 
-  <header class="site-header container header-inner">
+  <header class="site-header container">
     <div class="brand">
       <div class="name">Noor Ahmad Faiz Khan</div>
       <div class="role">AI & Software Engineer</div>
     </div>
+
     <nav class="nav">
       <a class="btn" href="index.html">Home</a>
       <a class="btn" href="about.html">About</a>
@@ -25,37 +26,28 @@
   </header>
 
   <main class="container">
-    <section class="card about-card">
-      <div style="display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap;">
-        <div style="flex:0 0 180px;"><img class="about-photo" src="me.jpg" alt="Noor Ahmad"></div>
-        <div style="flex:1;">
-          <h2>About Me</h2>
-          <p>I build practical ML pipelines and simple APIs. I prefer small, testable steps: write a small model, test on sample data, add logging and documentation, then wrap in a tiny API. I focus on clarity and reproducibility so others can run and maintain the work.</p>
+    <section class="card">
+      <h2 style="color:var(--accent-1)">About Me</h2>
+      <p>I build practical ML pipelines and production-ready small APIs. I follow a workflow of small, testable experiments → clear documentation → reliable deployable code. My focus is readable code and reproducible results that help teams adopt models in production.</p>
 
-          <h3 style="margin-top:12px">Education</h3>
-          <p>Pursuing B.Sc. in Computer Science & Engineering — Southeast University</p>
+      <h3 style="margin-top:12px">Education</h3>
+      <p>Pursuing B.Sc. in Computer Science & Engineering — Southeast University</p>
 
-          <h3 style="margin-top:12px">Experience</h3>
-          <ul style="margin-top:8px; color:var(--muted)">
-            <li>Intelligent Finance Planner — budget suggestions via ML (2025)</li>
-            <li>Hospital Management System — backend & reporting (2024)</li>
-            <li>Automation tools for data cleaning & reporting (2023–2024)</li>
-          </ul>
-        </div>
-      </div>
+      <h3 style="margin-top:12px">Experience</h3>
+      <ul style="margin-top:8px; color:var(--muted)">
+        <li>Intelligent Finance Planner — budget suggestion & analysis (2025)</li>
+        <li>Hospital Management System — backend and reporting (2024)</li>
+        <li>Data cleaning & automation tools for internal use (2023–2024)</li>
+      </ul>
+
+      <h3 style="margin-top:12px">How I work</h3>
+      <p>Small reproducible experiments, automated tests, and clear READMEs. I use Python (pandas, scikit-learn), wrap services in Flask/FastAPI, and prefer simple, maintainable deployments.</p>
     </section>
 
-    <section style="margin-top:16px">
-      <h3 style="color:#0b3a66">How I Work</h3>
-      <div class="card">
-        <p>Small experiments → tests → documentation → deployable prototype. I use Python, pandas, scikit-learn or small PyTorch models for experiments, then wrap useful components in a Flask/FastAPI service. I value readable code and good README files.</p>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer container">
     <p>© 2025 Noor Ahmad Faiz Khan</p>
   </footer>
-
 </body>
 </html>
