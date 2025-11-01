@@ -3,144 +3,81 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Noor Ahmad Faiz Khan - Home</title>
+  <title>Noor Ahmad — Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <div>
-        <h1>Noor Ahmad Faiz Khan</h1>
-        <h2 class="role">AI & Software Engineer</h2>
-      </div>
-
-      <nav class="nav">
-        <a href="index.html" class="btn">Home</a>
-        <a href="about.html" class="btn">About</a>
-        <a href="#projects" class="btn">Projects</a>
-        <a href="#skills" class="btn">Skills</a>
-        <a href="#reviews" class="btn">Testimonials</a>
-        <a href="#contact" class="btn">Contact</a>
-        <a href="resume.pdf" class="btn" download>Download Resume</a>
-      </nav>
+  <header class="site-header container header-inner">
+    <div class="brand">
+      <div class="name">Noor Ahmad Faiz Khan</div>
+      <div class="role">AI & Software Engineer</div>
     </div>
+
+    <nav class="nav">
+      <a class="btn" href="index.html">Home</a>
+      <a class="btn" href="about.html">About</a>
+      <a class="btn" href="projects.html">Projects</a>
+      <a class="btn" href="skills.html">Skills</a>
+      <a class="btn" href="testimonials.html">Testimonials</a>
+      <a class="btn" href="resume.pdf" download>Resume</a>
+      <a class="btn secondary" href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <!-- HERO / PHOTO -->
-  <section class="hero container">
-    <div class="hero-left">
-      <img class="photo" src="me.jpg" alt="Photo of Noor Ahmad Faiz Khan" width="220" height="220">
-    </div>
-    <div class="hero-right">
-      <h2>Hello — I build practical AI systems</h2>
-      <p class="lead">I am a software & AI engineer who builds production-ready small ML pipelines, APIs, and automation tools. I focus on readable code, reproducible experiments and usable products.</p>
-      <ul class="quick-list">
-        <li>Python • scikit-learn • PyTorch (basic)</li>
-        <li>APIs with Flask / FastAPI • Docker basics</li>
-        <li>Data cleaning • Feature engineering • Model deployment</li>
-      </ul>
-    </div>
-  </section>
+  <main class="container">
+    <section class="hero">
+      <div class="card-hero">
+        <img src="me.jpg" alt="Noor Ahmad photo" class="photo">
+        <div style="height:10px"></div>
+        <div style="font-weight:700; color:#0b3a66">Noor Ahmad Faiz Khan</div>
+        <div style="color:var(--muted); font-size:13px">AI & Software Engineer</div>
+      </div>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="container">
-    <h3>Projects</h3>
+      <div class="hero-right">
+        <h2>Hi — I build practical AI systems</h2>
+        <p class="lead">I create production-ready small ML pipelines, APIs, and automation tools. I focus on readable code, reproducible experiments, and products that teams can use.</p>
+        <ul class="quick-list">
+          <li>Python</li><li>scikit-learn</li><li>Flask / FastAPI</li><li>pandas</li>
+        </ul>
 
-    <div class="card">
-      <h3>CV Parser</h3>
-      <p>Extracts name, phone, email, education, and skills from resumes and exports structured CSV for recruiters.</p>
-      <p><strong>Tech:</strong> Python, spaCy, simple CSV</p>
-      <p><a class="link" href="#" target="_blank">Project Demo (placeholder)</a></p>
-    </div>
+        <div style="margin-top:14px">
+          <a class="btn" href="projects.html">See Projects</a>
+          <a class="btn secondary" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Anomaly Detector</h3>
-      <p>Lightweight ML model to flag unusual sensor values and trigger alerts for monitoring systems.</p>
-      <p><strong>Tech:</strong> scikit-learn, Flask API</p>
-      <p><a class="link" href="#" target="_blank">Code / Repo (placeholder)</a></p>
-    </div>
+    <section style="margin-top:18px">
+      <h3 style="color:#0b3a66">Featured Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <figure><img src="me.jpg" alt="project thumbnail"></figure>
+          <h3>CV Parser</h3>
+          <p>Parses resumes to extract structured fields (name, email, skills) and export CSV for recruiters.</p>
+          <p><a class="link" href="projects.html#cv-parser">Details →</a></p>
+        </article>
 
-    <div class="card">
-      <h3>Resume Search Tool</h3>
-      <p>Small web tool to search parsed CVs by keywords to speed recruiter shortlisting.</p>
-      <p><strong>Tech:</strong> Python, simple HTML UI, CSV backend</p>
-      <p><a class="link" href="#" target="_blank">Live (placeholder)</a></p>
-    </div>
-  </section>
+        <article class="card">
+          <figure><img src="me.jpg" alt="project thumbnail 2"></figure>
+          <h3>Anomaly Detector</h3>
+          <p>Lightweight pipeline to flag abnormal sensor readings and provide alerts.</p>
+          <p><a class="link" href="projects.html#anomaly">Details →</a></p>
+        </article>
 
-  <!-- SKILLS -->
-  <section id="skills" class="container">
-    <h3>Skills</h3>
+        <article class="card">
+          <figure><img src="me.jpg" alt="project thumbnail 3"></figure>
+          <h3>Resume Search Tool</h3>
+          <p>Small search UI over parsed CVs to speed up shortlisting by keyword.</p>
+          <p><a class="link" href="projects.html#resume-search">Details →</a></p>
+        </article>
+      </div>
+    </section>
 
-    <!-- Each skill uses two divs to form a progress bar -->
-    <div class="skill">
-      <div class="skill-name">Python</div>
-      <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
-    </div>
+  </main>
 
-    <div class="skill">
-      <div class="skill-name">Machine Learning (scikit-learn)</div>
-      <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <div class="skill-name">APIs & Backend (Flask / FastAPI)</div>
-      <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <div class="skill-name">Data Cleaning & pandas</div>
-      <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <div class="skill-name">Git & Collaboration</div>
-      <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
-    </div>
-
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section id="reviews" class="container">
-    <h3>Testimonials</h3>
-
-    <div class="card review">
-      <p class="quote">"Noor built a reliable parser that saved us hours per week."</p>
-      <p class="who">— Product Manager, RecruitMatch</p>
-    </div>
-
-    <div class="card review">
-      <p class="quote">"Delivered clean code and good documentation." </p>
-      <p class="who">— CTO, SensorCo</p>
-    </div>
-
-    <div class="card review">
-      <p class="quote">"Model suggestions increased sales for our product line." </p>
-      <p class="who">— Owner, SweetBakes</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="container">
-    <h3>Contact</h3>
-
-    <div class="card contact-card">
-      <p><strong>Email:</strong> <a class="link" href="mailto:2023100000070@seu.edu.bd">2023100000070@seu.edu.bd</a></p>
-      <p><strong>Phone:</strong> +880 1X-XXXX-XXXX</p>
-      <p><strong>LinkedIn:</strong> <a class="link" href="https://linkedin.com/in/noor-ahmad-fkhan" target="_blank">linkedin.com/in/noor-ahmad-fkhan</a></p>
-      <p><strong>GitHub:</strong> <a class="link" href="https://github.com/noor-faiz" target="_blank">github.com/noor-faiz</a></p>
-      <p class="note">Note: If you want a working contact form you can later add a server or form service (we kept this static per instructions).</p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Noor Ahmad Faiz Khan — AI & Software Engineer</p>
-    </div>
+  <footer class="site-footer container">
+    <p>© 2025 Noor Ahmad Faiz Khan — AI & Software Engineer</p>
   </footer>
 
 </body>
