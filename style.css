@@ -144,3 +144,64 @@ textarea{ min-height:120px; resize:vertical; }
   .nav{ justify-content:center; width:100%; }
   .brand{ text-align:center; }
 }
+
+/* ---------- Additional styles for Projects, Skills and Testimonials ---------- */
+
+/* Project list layout (vertical list cards) */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+/* Individual project item */
+.project-item {
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,250,255,0.9));
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(12,30,45,0.05);
+  border-left: 4px solid rgba(123,108,255,0.16);
+}
+.project-item h4 { margin: 0 0 6px 0; color: var(--accent-2); font-size: 17px; }
+.project-item p { margin: 4px 0; color: #18373a; line-height:1.45; font-size:14px; }
+
+/* Make project list slightly denser on small screens */
+@media (max-width: 700px) {
+  .project-list { gap: 10px; }
+  .project-item { padding: 12px; }
+}
+
+/* Skill card tweaks (ensures consistent spacing) */
+.skill { margin-top: 12px; }
+.skill-name { font-weight:700; color:#163d46; margin-bottom:8px; font-size:14px; }
+.skill-bar { background: rgba(3,66,90,0.06); height: 12px; border-radius: 999px; overflow: hidden; }
+.skill-fill { height: 100%; background: linear-gradient(90deg,var(--accent-2), var(--accent-1)); border-radius: 999px; transition: width .6s ease; }
+
+/* Testimonials grid (cards, stars, attribution) */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+@media (max-width: 920px) {
+  .testimonials-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 520px) {
+  .testimonials-grid { grid-template-columns: 1fr; }
+}
+
+.card.review {
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.76));
+  box-shadow: 0 10px 28px rgba(12,30,45,0.05);
+}
+.stars { font-size:16px; color:#ffb400; margin-bottom:8px; }
+.quote { font-style: italic; color:#0f3940; margin-bottom:8px; }
+.who { color:var(--muted); font-size:13px; }
+
+/* small spacing helpers */
+.project-list .project-item + .project-item { margin-top: 8px; }
+
