@@ -3,69 +3,58 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Noor Ahmad Faiz Khan - About</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Noor Ahmad — About</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <div>
-        <h1 class="name">Noor Ahmad Faiz Khan</h1>
-        <p class="role">AI & Software Engineer</p>
-      </div>
-
-      <nav class="nav">
-        <a href="index.html" class="btn">Home</a>
-        <a href="about.html" class="btn">About</a>
-        <a href="index.html#projects" class="btn">Projects</a>
-        <a href="index.html#skills" class="btn">Skills</a>
-        <a href="index.html#reviews" class="btn">Testimonials</a>
-        <a href="index.html#contact" class="btn">Contact</a>
-        <a href="resume.pdf" class="btn" download>Resume</a>
-      </nav>
+  <header class="site-header container header-inner">
+    <div class="brand">
+      <div class="name">Noor Ahmad Faiz Khan</div>
+      <div class="role">AI & Software Engineer</div>
     </div>
+    <nav class="nav">
+      <a class="btn" href="index.html">Home</a>
+      <a class="btn" href="about.html">About</a>
+      <a class="btn" href="projects.html">Projects</a>
+      <a class="btn" href="skills.html">Skills</a>
+      <a class="btn" href="testimonials.html">Testimonials</a>
+      <a class="btn" href="resume.pdf" download>Resume</a>
+      <a class="btn secondary" href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="container about-card card">
-      <h2>About Me</h2>
-      <div>
-        <img class="photo about-photo" src="me.jpg" alt="Noor Ahmad Faiz Khan" width="180" height="180">
+  <main class="container">
+    <section class="card about-card">
+      <div style="display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap;">
+        <div style="flex:0 0 180px;"><img class="about-photo" src="me.jpg" alt="Noor Ahmad"></div>
+        <div style="flex:1;">
+          <h2>About Me</h2>
+          <p>I build practical ML pipelines and simple APIs. I prefer small, testable steps: write a small model, test on sample data, add logging and documentation, then wrap in a tiny API. I focus on clarity and reproducibility so others can run and maintain the work.</p>
+
+          <h3 style="margin-top:12px">Education</h3>
+          <p>Pursuing B.Sc. in Computer Science & Engineering — Southeast University</p>
+
+          <h3 style="margin-top:12px">Experience</h3>
+          <ul style="margin-top:8px; color:var(--muted)">
+            <li>Intelligent Finance Planner — budget suggestions via ML (2025)</li>
+            <li>Hospital Management System — backend & reporting (2024)</li>
+            <li>Automation tools for data cleaning & reporting (2023–2024)</li>
+          </ul>
+        </div>
       </div>
-      <p>I build practical machine learning pipelines and small, testable APIs. I like turning experiments into simple systems that teams can use. My workflow: small steps → tests → documentation → deployable code.</p>
-
-      <h3>Education</h3>
-      <p>Pursuing B.Sc. in Computer Science and Engineering at Southeast University.</p>
-
-      <h3>Experience</h3>
-      <ul>
-        <li>Intelligent Finance Planner — budget suggestions using AI (2025)</li>
-        <li>Hospital Management System — backend & reporting (2024)</li>
-        <li>Internal automation tools — data cleaning & reporting (2023–2024)</li>
-      </ul>
-
-      <h3>How I work</h3>
-      <p>I prefer clear, reproducible experiments and readable code. I aim to deliver working prototypes quickly, then improve reliability and documentation.</p>
     </section>
 
-    <section class="container">
-      <h3>Skills Summary</h3>
-      <div class="card small">
-        <ul>
-          <li>Python, pandas, NumPy</li>
-          <li>scikit-learn, basic PyTorch</li>
-          <li>Flask / FastAPI, simple Docker</li>
-          <li>Git, SQL, data pipelines</li>
-        </ul>
+    <section style="margin-top:16px">
+      <h3 style="color:#0b3a66">How I Work</h3>
+      <div class="card">
+        <p>Small experiments → tests → documentation → deployable prototype. I use Python, pandas, scikit-learn or small PyTorch models for experiments, then wrap useful components in a Flask/FastAPI service. I value readable code and good README files.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Noor Ahmad Faiz Khan</p>
-    </div>
+  <footer class="site-footer container">
+    <p>© 2025 Noor Ahmad Faiz Khan</p>
   </footer>
 
 </body>
