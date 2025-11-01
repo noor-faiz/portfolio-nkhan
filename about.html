@@ -3,58 +3,70 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Noor Ahmad — About</title>
+  <title>Noor Ahmad Faiz Khan - About</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header class="site-header">
-    <div class="container">
-      <h1 class="name">Noor Ahmad Faiz Khan</h1>
-      <p class="role">Software • AI Engineer</p>
+    <div class="container header-inner">
+      <div>
+        <h1 class="name">Noor Ahmad Faiz Khan</h1>
+        <p class="role">AI & Software Engineer</p>
+      </div>
 
-      <nav>
-  <a href="index.html" class="btn">Home</a>
-  <a href="about.html" class="btn">About Me</a>
-  <a href="#contact" class="btn">Contact</a>
-  <a href="#reviews" class="btn">Reviews</a>
-</nav>
+      <nav class="nav">
+        <a href="index.html" class="btn">Home</a>
+        <a href="about.html" class="btn">About</a>
+        <a href="index.html#projects" class="btn">Projects</a>
+        <a href="index.html#skills" class="btn">Skills</a>
+        <a href="index.html#reviews" class="btn">Testimonials</a>
+        <a href="index.html#contact" class="btn">Contact</a>
+        <a href="resume.pdf" class="btn" download>Resume</a>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section class="container">
+    <section class="container about-card card">
       <h2>About Me</h2>
-      <p>I build small ML systems and APIs that are practical to use. My work focuses on clear code, reproducible experiments, and small production-ready pipelines.</p>
+      <div>
+        <img class="photo about-photo" src="me.jpg" alt="Noor Ahmad Faiz Khan" width="180" height="180">
+      </div>
+      <p>I build practical machine learning pipelines and small, testable APIs. I like turning experiments into simple systems that teams can use. My workflow: small steps → tests → documentation → deployable code.</p>
 
-      <h3>Skills</h3>
-      <ul>
-        <li>Python, NumPy, pandas</li>
-        <li>scikit-learn, basic PyTorch</li>
-        <li>Flask / FastAPI for small APIs</li>
-        <li>Git, SQL</li>
-      </ul>
+      <h3>Education</h3>
+      <p>Pursuing B.Sc. in Computer Science and Engineering at Southeast University.</p>
 
       <h3>Experience</h3>
       <ul>
-        <li>Developed Intellegent Finance Planner, tracks daily finance and gives suggestion for optimal budget using AI (2025)</li>
-        <li>Developed Hospital Management System (2024)</li>
-        <li>Created small internal tools to automate data cleaning and reporting (2024)</li>
+        <li>Intelligent Finance Planner — budget suggestions using AI (2025)</li>
+        <li>Hospital Management System — backend & reporting (2024)</li>
+        <li>Internal automation tools — data cleaning & reporting (2023–2024)</li>
       </ul>
 
-      <h3>Education</h3>
-      <p>Currently pursuing B.Sc. in Computer Science and Engineering at Southeast University</p>
-
       <h3>How I work</h3>
-      <p>I prefer small, testable steps: write code, test with a small dataset, then add logging and simple docs. I focus on clarity so the work can be maintained properly.</p>
+      <p>I prefer clear, reproducible experiments and readable code. I aim to deliver working prototypes quickly, then improve reliability and documentation.</p>
+    </section>
+
+    <section class="container">
+      <h3>Skills Summary</h3>
+      <div class="card small">
+        <ul>
+          <li>Python, pandas, NumPy</li>
+          <li>scikit-learn, basic PyTorch</li>
+          <li>Flask / FastAPI, simple Docker</li>
+          <li>Git, SQL, data pipelines</li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <footer class="footer container">
-    <p>© 2025 Noor Ahmad Faiz Khan</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Noor Ahmad Faiz Khan</p>
+    </div>
   </footer>
 
 </body>
-
 </html>
-
