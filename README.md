@@ -1,1 +1,0 @@
-# Noor Ahmad Faiz Khan
